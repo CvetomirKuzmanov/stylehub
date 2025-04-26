@@ -1,11 +1,9 @@
-/* Container utility class */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
   }
   
-  /* Hero Section Styles */
   .hero {
     height: 500px;
     background-color: #f1f2f3;
@@ -48,7 +46,6 @@
     transform: translateY(-2px);
   }
   
-  /* Product Section Styles */
   .products {
     margin-bottom: 50px;
   }
@@ -66,7 +63,6 @@
     gap: 30px;
   }
   
-  /* No products message styling */
   .noProductsMessage {
     grid-column: 1 / -1;
     text-align: center;
@@ -89,7 +85,6 @@
     line-height: 1.6;
   }
   
-  /* Responsive Styles */
   @media (max-width: 768px) {
     .heroTitle {
       font-size: 36px;

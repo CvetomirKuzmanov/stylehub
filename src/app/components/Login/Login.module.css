@@ -1,0 +1,126 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.primaryBtn {
+    display: inline-block;
+    background-color: #ff6b6b;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    width: 100%;
+    text-align: center;
+}
+
+.primaryBtn:hover {
+    background-color: #ff5252;
+    transform: translateY(-2px);
+}
+
+.loginSection {
+    padding: 80px 0;
+}
+
+.authContainer {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.authTabs {
+    display: flex;
+    border-bottom: 1px solid #eee;
+}
+
+.authTab {
+    flex: 1;
+    text-align: center;
+    padding: 15px 0;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.authTab.active {
+    color: #ff6b6b;
+    border-bottom: 3px solid #ff6b6b;
+}
+
+.loginContent {
+    padding: 30px 40px;
+}
+
+.loginContent h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.loginSubtitle {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #777;
+}
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formGroup {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.formGroup label {
+    font-weight: 500;
+    color: #555;
+}
+
+.formGroup input[type="email"],
+.formGroup input[type="password"] {
+    padding: 12px 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease;
+}
+
+.formGroup input:focus {
+    outline: none;
+    border-color: #ff6b6b;
+}
+
+.registerLink {
+    text-align: center;
+    margin-top: 25px;
+    color: #555;
+}
+
+.registerLink a {
+    color: #ff6b6b;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .loginContent {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .authContainer {
+        margin: 0 15px;
+    }
+}

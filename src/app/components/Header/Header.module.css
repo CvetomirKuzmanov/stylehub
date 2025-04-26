@@ -1,4 +1,3 @@
-/* Header Styles */
 .header {
   background-color: #ffffff;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -29,7 +28,6 @@
   color: #ff6b6b;
 }
 
-/* Navigation Styles */
 .nav {
   display: flex;
   gap: 30px;
@@ -95,14 +93,12 @@
   color: white;
 }
 
-/* Container utility class */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .iconText {
     display: none;

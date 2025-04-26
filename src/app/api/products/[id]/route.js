@@ -1,6 +1,6 @@
-import { ProductService } from "@/app/services/productService";
-import { apiResponse } from "@/app/utils/api";
-import { AppError, handleError } from "@/app/utils/error";
+import { ProductService } from "../../../services/productService";
+import { apiResponse } from "../../../utils/api";
+import { AppError, handleError } from "../../../utils/error";
 
 export async function GET( request, { params }) {
     try {

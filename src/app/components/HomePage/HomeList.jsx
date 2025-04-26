@@ -5,7 +5,6 @@ import styles from './Home.module.css';
 import Product from '../Products/Product/Product';
 
 export default function HomeList({ products, isLoading, error }) {
-	console.log (products)
 	if (isLoading) {
 		return (
 			<div className={styles.noProductsMessage}>

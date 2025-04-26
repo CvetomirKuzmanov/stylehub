@@ -1,4 +1,3 @@
-// /app/utils/error.js
 'use client';
 
 export class AppError extends Error {

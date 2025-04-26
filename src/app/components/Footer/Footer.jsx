@@ -19,7 +19,6 @@ export default function Footer() {
             </div>
           </div>
           
-          {/* Maps Section (replacing Shop) */}
           <div className={styles.footerCol}>
             <h3>Visit Our Store</h3>
             <div className={styles.mapContainer}>

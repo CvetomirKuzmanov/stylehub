@@ -16,7 +16,6 @@ export default function ProductsProvider({ initialProducts = [] }) {
   useEffect(() => {
     fetchProducts();
   }, [fetchProducts]);
-  console.log(products);
 
   return (
     <>

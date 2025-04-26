@@ -19,7 +19,6 @@ export function useProducts(initialProducts = []) {
             }
 
             const data = await response.json();
-            console.log ('data', data)
             setProducts(data);
         } catch (err) {
             setError(err.message);

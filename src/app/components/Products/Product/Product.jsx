@@ -19,7 +19,7 @@ export default function Product({ product }) {
   //     }
   //     addToCart(_id);
   //   };
-  console.log('product works', product)
+  
   return (
     <div className={styles.productCard} key={product.id}>
       <div className={styles.productImg}>
