@@ -1,0 +1,178 @@
+/* H&M-inspired Product Details Styles with module class names */
+
+.productContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .productCard {
+    background-color: #ffffff;
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: none;
+    border: none;
+  }
+  
+  .productImage {
+    position: relative;
+    width: 60%;
+    height: 600px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+  }
+  
+  .productImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+  }
+  
+  .productDetails {
+    padding: 40px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .productTitle {
+    font-size: 1.25rem;
+    color: #222222;
+    margin-bottom: 8px;
+    font-weight: 400;
+    text-transform: none;
+    letter-spacing: 0.5px;
+  }
+  
+  .productPricing {
+    margin-bottom: 24px;
+  }
+  
+  .productCurrentPrice {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #222;
+  }
+  
+  .productDescription {
+    color: #767676;
+    line-height: 1.5;
+    margin-bottom: 24px;
+    font-size: 0.875rem;
+  }
+  
+  .productActions {
+    position: relative;
+    top: auto;
+    right: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: auto;
+  }
+  
+  .productActionButton {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    background-color: #222;
+    color: #fff;
+    border: none;
+  }
+  
+  .productActionButton:hover {
+    background-color: #444;
+    transform: none;
+  }
+  
+  .productAdminButtons {
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+    width: 100%;
+  }
+  
+  .productAdminBtn {
+    display: inline-block;
+    background-color: #222;
+    color: white;
+    padding: 14px 20px;
+    border-radius: 0;
+    text-decoration: none;
+    font-weight: 400;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 0.875rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    flex: 1;
+  }
+  
+  .editButton {
+    background-color: #222;
+  }
+  
+  .editButton:hover {
+    background-color: #444;
+  }
+  
+  .deleteButton {
+    background-color: #222;
+  }
+  
+  .deleteButton:hover {
+    background-color: #444;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 992px) {
+    .productCard {
+      flex-direction: column;
+    }
+    
+    .productImage,
+    .productDetails {
+      width: 100%;
+    }
+    
+    .productImage {
+      height: 450px;
+    }
+    
+    .productDetails {
+      padding: 24px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .productImage {
+      height: 350px;
+    }
+    
+    .productAdminButtons {
+      flex-direction: column;
+    }
+    
+    .productAdminBtn {
+      width: 100%;
+    }
+    
+    .productActionButton {
+      height: 44px;
+    }
+  }
